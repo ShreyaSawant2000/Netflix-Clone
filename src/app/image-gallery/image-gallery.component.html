@@ -1,0 +1,49 @@
+<div class="nav nav_black "#nav>
+  <div class="image">
+  <img src="assets/images/netflix-logo.png" alt="" class="nav_logo"/>
+  <ul>
+      <a [routerLink]="['']">Home</a>
+      <a [routerLink]="['/image']">Tv Shows</a>
+      <a href="">Movies</a>
+      <!-- <a href="">News & Popular</a> -->
+   </ul>
+  </div>
+  <div class="icon">
+      <span class="material-symbols-outlined">
+          notifications
+          </span>
+      <span class="material-symbols-outlined">
+          search
+          </span>
+      <img src="assets/images/netflix-avatar.png" alt="" class="nav_avatar"/>
+  </div>
+  
+</div>
+<div class="bg">
+  
+ 
+  
+    <div class="banner">
+      <div class="banner_contents"><span class="banner-title">Watch Latest <br> TvShows Here..</span>
+        
+  
+         
+      </div>
+      <div class="banner_fadeBottom"></div>
+     
+      </div>
+
+ <div class="row_des"><h2>Tv Shows</h2></div>
+   <div  class="image-container"  >
+      <cdk-virtual-scroll-viewport 
+        [itemSize]="50"
+        style="width: 100%;"
+       >
+        <div *cdkVirtualFor="let item of test" class="image-item" >
+          <img [src]="item" alt="Image" >
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </div>
+</div>
+    
+    

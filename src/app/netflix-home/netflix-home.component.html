@@ -1,0 +1,105 @@
+<div class="container">
+<!-- <div class="nav  " #nav>
+    <img src="assets/images/netflix-logo.png" alt="" class="nav_logo"/>
+    <img src="assets/images/netflix-avatar.png" alt="" class="nav_avatar"/>
+   
+</div> -->
+<div class="nav nav_black "#nav>
+    <div class="image">
+    <img src="assets/images/netflix-logo.png" alt="" class="nav_logo"/>
+    <ul>
+        <a [routerLink]="['']">Home</a>
+        <a [routerLink]="['/image']">Tv Shows</a>
+        <a [routerLink]="['/image']">Movies</a>
+      
+      
+     </ul>
+    </div>
+    <div class="icon">
+        <span class="material-symbols-outlined">
+            notifications
+            </span>
+        <span class="material-symbols-outlined">
+            search
+            </span>
+        <img src="assets/images/netflix-avatar.png" alt="" class="nav_avatar"/>
+    </div>
+    
+</div>
+
+<!-- Header Carousel -->
+<div class="banner">
+<div class="banner_contents"><span class="banner-title">Squid Game</span>
+    <div class="banner_buttons">
+        
+    </div>
+    <div class="banner_description">
+       <p>A story of people who fail at life for various reasons, but suddenly receive a mysterious invitation to participate in a survival game to win more than 38 .</p>
+        <button class="banner_button-play">Play</button>
+        <button class="banner_button-list">My List</button>
+    </div>
+</div>
+<div class="banner_fadeBottom"></div>
+</div>
+
+<!--Netflix Originals-->
+<div class="row">
+    <div class="row_des">
+    <h2>NETFLIX ORIGINALS</h2>
+    <h4><a [routerLink]="['/image']">View all ></a></h4>
+</div>
+    <div class="row_posters">
+        <app-img-com></app-img-com>
+    </div>
+</div>
+
+
+<!--Netflix Originals-->
+<div class="row">
+    <div class="row_des">
+    <h2>New ORIGINALS</h2>
+    <h4><a [routerLink]="['/image']">View all ></a></h4>
+</div>
+    <div class="row_posters">
+        <app-img-com></app-img-com> 
+    </div>
+    </div>
+
+
+
+
+
+
+
+ <!--Top Rated-->
+ <div class="row">
+    <div class="row_des">
+    <h2>Top Rated</h2>
+    <h4> View all ></h4>
+    </div>
+    <div class="row_posters">
+        <app-small-img></app-small-img>
+    </div>
+</div> 
+
+
+        <!--Horror Movies-->
+        <div class="row">
+            <h2>Horror Movies</h2>
+            <div class="row_posters">
+                <app-small-img></app-small-img>
+            </div>
+        </div>
+
+
+            <!--Romace Movies-->
+    <div   id="romance"class="row">
+        <h2>Romance Movies</h2>
+        <div class="row_posters">
+           <app-small-img></app-small-img>
+        </div>
+    </div>
+
+
+
+          
